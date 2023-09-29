@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="0.232" tests="6" skipped="0" failures="0" errors="0">
+<testcase classname="Amazon Account Registration" name="User registration required fields" time="0.016">
+<system-out><![CDATA[
+Given the user is already on Amazon registration page.......................passed
+When user clicks on continue button.........................................passed
+Then user should see error message on username, email and password fields...passed
+]]></system-out>
+</testcase>
+<testcase classname="Amazon Account Registration" name="Registration with Existing User" time="0.006">
+<system-out><![CDATA[
+Given the user is already on Amazon registration page.......................passed
+When user entered existing account details as below.........................passed
+And user clicks on verify email button......................................passed
+Then user should receive displayed message as "Are you a returning customer?".passed
+]]></system-out>
+</testcase>
+<testcase classname="Guest User shopping on Amazon" name="Guest user visits Amazon website" time="0.005">
+<system-out><![CDATA[
+Given user must be on Amazon Webpage........................................passed
+When user search a product in search bar by entering "HP Laptops"...........passed
+And upon clicking search icon, user should see search product results.......passed
+And user select an item and add to the cart.................................passed
+Then user should see confirmation message that the product is added to the cart.passed
+And user clicks on the "Proceed to Checkout (1 item)" option................passed
+And user should be prompted to log in or create account.....................passed
+]]></system-out>
+</testcase>
+<testcase classname="Signin to the Amazon Webpage" name="User enter valid SignIn details" time="0.004">
+<system-out><![CDATA[
+Given User is already on the homepage of Amazon Website.....................passed
+When user clicks on Hello, Sign in option...................................passed
+Then user enter valid email "tithitesting@gmail.com" and password "testing".passed
+And user should be able to login successfully...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Signin to the Amazon Webpage" name="User enter valid username and invalid password" time="0.002">
+<system-out><![CDATA[
+Given User is already on the homepage of Amazon Website.....................passed
+When user clicks on Hello, Sign in option...................................passed
+Then user enter valid email "tithitesting@gmail.com" and invalid password "TesTing".passed
+And user to receive error message to enter valid password...................passed
+]]></system-out>
+</testcase>
+<testcase classname="Signin to the Amazon Webpage" name="User enter blank username" time="0.002">
+<system-out><![CDATA[
+Given User is already on the homepage of Amazon Website.....................passed
+When user clicks on Hello, Sign in option...................................passed
+Then user click on continue without entering username.......................passed
+And user should receive error to enter username.............................passed
+]]></system-out>
+</testcase>
+</testsuite>
