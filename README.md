@@ -1,6 +1,6 @@
 # BDDFramework 
 
-Cucumber BDD Selenium Framework
+A project in order to practice designing automated test frameworks. UI automation of the Amazon Website using the Cucumber BDD Selenium Framework (A behavior-driven development tool that can be used with selenium).
 
 What all tools are used in this project?
 - Cucumber
